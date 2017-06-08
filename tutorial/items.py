@@ -9,8 +9,10 @@ import scrapy
 
 
 class TabeLogItem(scrapy.Item):
+    num = scrapy.Field()
     name = scrapy.Field()
     link = scrapy.Field()
     longitude = scrapy.Field()
     latitude = scrapy.Field()
-
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
